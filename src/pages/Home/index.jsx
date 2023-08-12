@@ -11,6 +11,12 @@ import {
   ICServex,
   ElapseImage1,
   ICSearchTool,
+  ICCircle,
+  HomeRectBL,
+  HomeRectBR,
+  ICUserAvatar,
+  ICBonus,
+  ICDuatone,
 } from "../../assets/images";
 import { Link } from "react-router-dom";
 
@@ -84,9 +90,9 @@ const Home = () => {
           </div>
         </div>
       </header>
-      <main className="bg-[#0B0E0F] h-[800px]">
-        <section key={"welcome"} className="h-full flex items-center">
-          <div className="w-1/2 flex justify-end">
+      <main className="bg-[#0B0E0F] h-[900px]">
+        <section key={"welcome"} className="h-full flex">
+          <div className="w-1/2 flex h-full items-center justify-end">
             <div className="flex flex-col gap-10 ml-60">
               <p className="text-[#A4AFB6] text-[40px] font-bold">Welcome To</p>
               <div className="w-256">
@@ -105,12 +111,51 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-1/2 flex">
+          <div className="w-1/2 flex h-full items-center">
             {/* <h1>Here</h1> */}
-            <div className="w-140 h-140">
 
+            <div className="w-140 h-140 absolute">
+              <img src={ICCircle} alt="Circle"/>
+            </div>
+            <div className="absolute bottom-0">
+              <img src={HomeRectBL} alt="Rect Left" />
+            </div>
+            <div className="absolute bottom-0 right-0">
+              <img src={HomeRectBR} alt="Rect Right" />
             </div>
           </div>
+        </section>
+        <section key={"Services"}>
+          {/* Cards */}
+            <div className="flex items-center justify-center gap-20 h-[660px] bg-[#0B0E0F]">
+
+              {/* Card1 */}
+              <div className="gap-4 items-center flex flex-col justify-center bg-[#151819] w-[300px] h-[240px] rounded-[30px]">
+                <div className="w-[60px] h-[60px] rounded-[100%] bg-[#202324] items-center justify-center flex">
+                  <img src={ICUserAvatar} alt="user avatar" />
+                </div>
+                <p className="text-[#1DC742] text-[40px] font-[700]">1.2M+</p>
+                <p className="text-white font-[700] text-[20px]">Users</p>
+              </div>
+              {/* Card2 */}
+              <div className="gap-4 items-center flex flex-col justify-center bg-[#151819] w-[300px] h-[240px] rounded-[30px]">
+                <div className="w-[60px] h-[60px] rounded-[100%] bg-[#202324] items-center justify-center flex">
+                  <img src={ICBonus} alt="user avatar" />
+                </div>
+                <p className="text-[#1DC742] text-[40px] font-[700]">4.9M+</p>
+                <p className="text-white font-[700] text-[20px]">Sales</p>
+              </div>
+
+              {/* Card3 */}
+              <div className="gap-4 items-center flex flex-col justify-center bg-[#151819] w-[300px] h-[240px] rounded-[30px]">
+                <div className="w-[60px] h-[60px] rounded-[100%] bg-[#202324] items-center justify-center flex">
+                  <img src={ICDuatone} alt="user avatar" />
+                </div>
+                <p className="text-[#1DC742] text-[40px] font-[700]">2.6M+</p>
+                <p className="text-white font-[700] text-[20px]">Transactions</p>
+              </div>
+            </div>
+            
         </section>
       </main>
     </div>
