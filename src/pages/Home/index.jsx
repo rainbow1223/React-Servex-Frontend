@@ -157,6 +157,21 @@ const Home = () => {
             </div>
             
         </section>
+
+        {/* Section3 */}
+        <section>
+          <div className="h-[500px] bg-[#151819] flex flex-col justify-center items-center gap-10">
+              <p className="text-[40px] text-white">Search Perfect <span className="text-[#53FC18]">Pro</span>fessional</p>
+              <input type="text" className="bg-[#25272B] w-1/2 h-[80px] rounded-[50px] text-[#8E93A6] text-[26px] text-center" placeholder="Search here..."/>
+              <div className="flex justify-center gap-10">
+                <button className="px-2 h-12 py-2 text-[20px] font-[400] rounded-[40px] flex items-center border border-gray-300 text-[#8E93A6] bg-[#151819] ">Designers</button>
+                <button className="px-2 h-12 py-2 text-[20px] font-[400] rounded-[40px] flex items-center border border-gray-300 text-[#8E93A6] bg-[#151819] ">Developers</button>
+                <button className="px-2 h-12 py-2 text-[20px] font-[400] rounded-[40px] flex items-center border border-gray-300 text-[#8E93A6] bg-[#151819] ">3D Artists</button>
+                <button className="px-2 h-12 py-2 text-[20px] font-[400] rounded-[40px] flex items-center border border-gray-300 text-[#8E93A6] bg-[#151819] ">Content Writer</button>
+              </div>
+              <p className="text-[#53FC18] text-[20px] font-[700] underline">Advance Search</p>
+          </div>
+        </section>
       </main>
     </div>
   );
